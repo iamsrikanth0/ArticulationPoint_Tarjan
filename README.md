@@ -5,3 +5,4 @@ Now lets understand what actually is a Child node ? When we are accessing a neig
 So here we use vis array, dt, low, time just as bridge algo. Along with them we use child=0, also a Boolean array to get AP >> Initialization
 Then we check three condition when we access neighbour. 1. If neigh id parent, just continue 2. if Neighbour is already visited, updated low 3. If neight is not visited, then update low, check AP condition when par != -1. At the end update child after every dfs loop, because we accessed a neightbour right. We track only disconnected child (Important), and how are we doing it, at the end of DFS we are updating Child count. 
 We have another condition to check after DFS, i.e when par=-1 and child is greater then 1, there is a AP
+Time complexity O(V+E), same as DFS
